@@ -1,0 +1,44 @@
+
+#ACTIVITY : creating and editing vectors 
+
+
+#Numeric vector 
+num_vec <- c(10, 20, 30, 40, 50)
+num_vec
+
+
+#Character vector 
+cha_vec <- c("a", "b", "c", "d", "e")
+
+#Assign
+names(num_vec) <- char_vec
+
+#Create a new vector for the first, third, and fifth indices 
+vector2 <- num_vec[c(1, 3, 5)]
+vector2
+
+#Create a new vector that contains the names of the indices 
+subset_names <- names(vector2)
+subset_names
+
+
+
+#ACTIVITY : Vector Match
+
+Leaf_area <- c(2.5, 1.6, 2.2, 2.6)
+Leaf_mass <- c(22, 15, 20, 24)
+
+
+#what is the average leaf area and leaf mass?
+mean (Leaf_area)
+
+mean (Leaf_mass)
+
+#what is the leaf mass/area for each leaf?
+(LMA <- Leaf_mass / Leaf_area)
+
+#what is the average leaf mass/area?
+mean(LMA)
+
+
+
