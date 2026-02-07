@@ -1,0 +1,46 @@
+#ACTIVITY
+
+
+# Question: Is petal length different between species?
+
+data(iris)
+
+anovapetal <- aov(Petal.Length ~ Species, data = iris)
+summary(anovapetal)
+
+TukeyHSD(anovapetal)
+
+
+
+boxplot(Petal.Length ~ Species, data = iris,
+        col = c("lightblue","lightgreen","lightpink"),
+        main = "Petal length differences",
+        ylab = "Petal Length")
+
+
+
+
+anova_result <- summary(aov(cbind(Chlorophyll, Weight, lipids) ~ 1, data = plants))
+anova_result
+
+
+
+anova_result <- aov(Value ~ Variable, data = plants_long)
+summary(anova_result)
+
+
+plants
+
+res_aov<- aov(plants$)
+
+
+data <- data.frame(Chlorophyll, Weight)
+
+t_test_result <- t.test(data$Chlorophyll, data$Weight)
+
+
+
+
+
+
+
